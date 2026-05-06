@@ -2,34 +2,31 @@
 
 ## Purpose
 
-This standard defines required public model card sections for Foundation civic AI model releases.
+This standard defines required content for Foundation-aligned Hugging Face model-card templates and future reviewed model cards.
 
 ## Required Sections
 
-| Section | Required Detail |
+Every model-card template must include:
+
+| Section | Requirement |
 | --- | --- |
-| YAML metadata | Hugging Face metadata with license, language, tags, pipeline, datasets, metrics, and model index placeholders or approved values. |
-| Model summary | Owner, version, status, purpose, and non-claims. |
-| Intended use | Approved public use cases, audience, domain, geography, and language. |
-| Out-of-scope use | Unsupported decisions, forbidden reliance, and private-data exclusions. |
-| Foundation alignment | Public trust purpose and Foundation independence from YOSO-YAi LLC. |
-| Training data summary | Public-safe data category summary. |
-| Data exclusions | Explicit private, sealed, sensitive, and unreleased artifact exclusions. |
-| Privacy boundaries | Review process and known privacy limits. |
-| Evaluation status | Functional, safety, bias, privacy, and governance review status. |
-| Limitations | Scope, freshness, language, geography, reliability, and known failure modes. |
-| Bias and risk notes | High-level risk categories without operational misuse detail. |
-| Safety notes | Link to reviewed safety note and reliance boundary. |
-| Environmental and civic context | Public compute or hosting context if approved, and civic interpretation notes. |
-| Citation, contact, governance | Citation, contact, governance owner, and Foundation context link. |
-| GitHub companion | Link to companion repository. |
-| Hugging Face link | Link to released HF model only when public. |
-| Version history | Version, date, status, and notes. |
+| Status | Planned, scaffolded, experimental, released, deprecated, or private/not-public. |
+| Intended use | Public-safe use cases and user groups. |
+| Out-of-scope use | Prohibited, unsupported, or high-risk uses. |
+| Training data summary | High-level reviewed summary only. |
+| Data exclusions | Explicit private, sealed, and sensitive exclusions. |
+| Privacy boundaries | Personal, donor, student, volunteer, customer, and telemetry protections. |
+| Evaluation status | Evaluation state and evidence link or planned status. |
+| Limitations | Known limits and non-reliance notes. |
+| Bias/risk notes | Public risk categories and known review needs. |
+| Safety notes | Safety controls, review status, and escalation path. |
+| Governance/contact | Human authority and contact placeholders. |
+| GitHub companion link | Link placeholder for companion docs. |
+| `218.network` placeholder | Context link placeholder or planned status. |
 
 ## Claim Rules
 
-- Do not claim a model exists until a public artifact exists.
-- Do not claim release until model card, safety note, release notes, governance review, and Hugging Face repository exist.
-- Do not claim performance without public evaluation summary and context.
-- Do not expose private evaluation data or hidden benchmarks.
-- Do not publish sealed methods or enough surrounding detail to reconstruct sealed capability.
+- Do not claim weights exist unless the public Hugging Face repository exists.
+- Do not claim evaluation results without public evaluation evidence and review status.
+- Do not include private corpora, sealed methods, hidden benchmarks, or production prompts.
+- Planned names must stay marked planned.

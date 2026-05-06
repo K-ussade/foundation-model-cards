@@ -2,68 +2,76 @@
 
 ## Purpose
 
-This repository is the public model-card scaffold for future 218 Network Foundation civic AI model releases. It defines model card standards, evaluation summary requirements, release checklist, planned model companions, sealed-to-release boundaries, and model release workflow maps.
+This repository is a public template and standards repo for Hugging Face model cards, model release notes, evaluation summaries, safety and limitations sections, and GitHub companion documentation for future reviewed Foundation-aligned model releases.
 
-This repository does not contain model weights, checkpoints, private training corpora, sealed training scripts, private evaluations, hidden benchmarks, production prompts, or claims that any planned model exists.
+It does not contain model weights, checkpoints, private training corpora, sealed training scripts, private evaluations, hidden benchmarks, production prompts, private telemetry, datasets, Spaces, deployments, or claims that any planned model exists.
 
 ## Repository Status
 
 | Field | Value |
 | --- | --- |
-| Status | Scaffolded |
-| Entity owner | 218 Network Foundation for Foundation-owned model releases |
-| Authority | Foundation release authority with human governance, safety, privacy, and data review |
-| Canonical source | GitHub public scaffold for approved model-card documentation; private release preparation stays outside this repo |
-| GitHub role | Public model-card companion and release documentation |
-| Hugging Face role | Companion documentation for future reviewed `218-network/*` model repositories |
-| Public surface | Model cards, release checklist, public evaluation summaries, and release status documentation |
+| Status | Scaffolded / published |
+| Entity owner | 218 Network Foundation for Foundation-owned releases |
+| Authority | Human Foundation release authority with governance, safety, privacy, and data review |
+| Canonical source | GitHub public standards and template source; private release preparation stays outside this repo |
+| GitHub role | Public model-card companion standards and release documentation |
+| Hugging Face role | Template source for future reviewed `218-network/*` model cards |
+| Portfolio role | Future proof surface for model-card documentation discipline after Alexandra review |
+| Public boundary | Templates, synthetic examples, release gates, and public-safe diagrams only |
 
 ## Related Public Repositories
 
 | Repository | Relationship |
 | --- | --- |
-| [`foundation-governance`](https://github.com/K-ussade/foundation-governance) | Governance authority and publication boundary. |
-| [`foundation-transparency-reports`](https://github.com/K-ussade/foundation-transparency-reports) | Public release reporting after reviewed releases exist. |
-| [`civic-ai-safety-notes`](https://github.com/K-ussade/civic-ai-safety-notes) | Safety notes, limitations, public reliance boundaries, and review gates. |
+| [`K-ussade`](https://github.com/K-ussade/K-ussade) | Alexandra's public GitHub profile and status vocabulary. |
+| [`foundation-graph-kit`](https://github.com/K-ussade/foundation-graph-kit) | Mermaid graph classes and public-safe diagram rules. |
+| [`foundation-public-roadmap`](https://github.com/K-ussade/foundation-public-roadmap) | Public status ledger for planned and scaffolded release surfaces. |
+| [`foundation-doc-templates`](https://github.com/K-ussade/foundation-doc-templates) | General documentation templates and review gates. |
+| [`foundation-dataset-cards`](https://github.com/K-ussade/foundation-dataset-cards) | Dataset-card standards for future reviewed datasets. |
 
-## Planned Model Companions
-
-These names are planned release targets only. They are not released models and do not imply trained weights, public benchmarks, or available Hugging Face repositories.
-
-| Planned Hugging Face Model | Status | GitHub Companion Status |
-| --- | --- | --- |
-| `218-network/civic-qa-foundation-base` | Planned | Model card scaffold only. |
-| `218-network/neurona-status-summarizer` | Planned | Model card scaffold only. |
-| `218-network/cleanup-report-classifier` | Planned | Model card scaffold only. |
-| `218-network/spanish-civic-assistant-pr` | Planned | Model card scaffold only. |
-| `218-network/school-resource-recommender` | Planned | Model card scaffold only. |
-
-## First Files
+## Template Inventory
 
 | Path | Role |
 | --- | --- |
-| `cards/README.md` | Card index and planned/released status rules. |
-| `templates/model-card.md` | Hugging Face compatible model card template. |
-| `release-checklist.md` | Required release checks before a model can be reported as released. |
-| `docs/model-card-standard.md` | Required model card sections and claim rules. |
-| `docs/evaluation-summary-standard.md` | Public evaluation summary format. |
-| `docs/release-status-policy.md` | Planned/scaffolded/experimental/released/deprecated model status rules. |
-| `docs/planned-model-companions.md` | Planned model companion registry. |
-| `docs/public-private-boundary.md` | Explicit allowed and forbidden material. |
-| `docs/quality-gate.md` | Required checks before publication. |
-| `docs/graphs/` | Mermaid maps for model-card release flow and sealed-to-release boundary. |
+| `templates/model-card.base.md` | Base Hugging Face model card template. |
+| `templates/model-card.civic-assistant.md` | Civic assistant model card variant. |
+| `templates/model-card.classifier.md` | Classifier model card variant. |
+| `templates/model-card.summarizer.md` | Summarizer model card variant. |
+| `templates/evaluation-report.template.md` | Public evaluation summary template. |
+| `templates/safety-and-limitations.template.md` | Safety and limitation note template. |
+| `templates/release-notes.template.md` | Model release notes template. |
+| `templates/github-companion-readme.template.md` | GitHub companion README template. |
+| `templates/release-checklist.template.md` | Release checklist template. |
+
+## Required Model Card Sections
+
+Every model-card template includes:
+
+- Status
+- Intended use
+- Out-of-scope use
+- Training data summary
+- Data exclusions
+- Privacy boundaries
+- Evaluation status
+- Limitations
+- Bias/risk notes
+- Safety notes
+- Governance/contact placeholders
+- GitHub companion link placeholder
+- `218.network` placeholder
 
 ## Public Boundary
 
 Allowed:
 
-- public model card templates;
-- public model card standards;
-- public planned model companion names marked planned;
-- public release checklists;
-- public evaluation summary format;
-- public safety and limitation links;
-- reviewed public model cards after release approval.
+- model-card templates;
+- release-readiness standards;
+- synthetic model-card examples clearly labeled synthetic;
+- public evaluation summary formats;
+- safety and limitation language;
+- GitHub-to-Hugging-Face linking rules;
+- planned status language without release claims.
 
 Forbidden:
 
@@ -87,7 +95,7 @@ Forbidden:
 
 ## Non-Claims
 
-This scaffold does not claim that any model has been trained, evaluated, uploaded, benchmarked, released, or approved for public use.
+This repository does not claim that any model has been trained, evaluated, uploaded, benchmarked, released, deployed, or approved for public use.
 
 ## Validation
 
@@ -99,4 +107,4 @@ scripts/validate-model-cards.sh
 
 ## First Milestone
 
-Model cards v0.1 is complete when the template, release checklist, evaluation summary standard, planned model companion registry, boundary document, quality gate, and Mermaid maps are reviewed by human Foundation authority.
+Model cards v0.1 is complete when the templates, synthetic example, standards, release checklist, linking rules, validation script, and Mermaid maps are reviewed by human Foundation authority.

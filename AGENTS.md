@@ -4,32 +4,33 @@ This file governs Codex work inside `foundation-model-cards`.
 
 ## Repository Role
 
-`foundation-model-cards` is the public model-card and release documentation scaffold for future Foundation civic AI model releases. It is not a model-development repository, weights repository, training workspace, evaluation lab, dataset repository, or sealed development workspace.
+`foundation-model-cards` is a public standards and template repository for future reviewed model cards and companion release documentation. It is not a model-development repository and is not a place for private training corpora, unreleased weights, model checkpoints, sealed scripts, private evaluations, hidden benchmarks, production prompts, private telemetry, or deployment claims.
 
 ## Authority
 
-- The 218 Network Foundation owns Foundation model-card documentation.
-- Human Foundation release, governance, safety, privacy, and data authority remains upstream of publication.
-- Codex may draft templates, standards, checklists, graphs, and validation checks.
-- Codex is not release, governance, safety, data, legal, or publication authority.
+- The 218 Network Foundation owns Foundation model-card standards for Foundation-owned releases.
+- Human Foundation release, governance, data, privacy, and safety authority remains upstream of publication.
+- Codex may draft templates, examples, graphs, and validation checks.
+- Codex is not model, release, governance, safety, legal, privacy, data, or publication authority.
 
 ## Entity Boundary Rules
 
 - The Foundation is independent from YOSO-YAi LLC.
-- The Foundation is not a YOSO-YAi marketing arm, CSR project, or product line.
-- YOSOR is a product of YOSO-YAi LLC, not a Foundation product.
-- YOSO-YAi LLC and YOSOR references must be boundary context only.
+- The Foundation is not a company marketing arm, CSR project, or product line.
+- YOSOR is a product of YOSO-YAi LLC.
+- Do not use Foundation release documentation to sell company products.
+- Do not present planned model names as released artifacts.
 
 ## Public Boundary
 
 Allowed:
 
-- model card templates;
-- model card standards;
-- planned model companion names marked planned;
-- release checklists;
-- public evaluation summary format;
-- public release workflow maps.
+- Hugging Face-style model-card templates;
+- public release-readiness standards;
+- synthetic examples clearly labeled synthetic/public-safe;
+- evaluation summary formats;
+- safety and limitations language;
+- GitHub and Hugging Face companion linking rules.
 
 Forbidden:
 
@@ -38,26 +39,27 @@ Forbidden:
 - private training corpora;
 - sealed training scripts;
 - sealed YOSO-YAi LLC IP;
-- private evaluations;
 - hidden benchmarks;
+- private evaluations;
 - private Foundation operations;
 - donor private data;
 - student data;
 - school private data;
 - volunteer private data;
 - customer data;
-- production prompts;
 - private telemetry;
+- production prompts;
 - secrets, tokens, and API keys;
 - security-sensitive NEURONA operational details.
 
 ## Writing Rules
 
-- Write in a precise release-documentation and civic AI safety voice.
-- Mark future models as planned unless public release evidence exists.
-- Do not invent model performance, training data, evaluation results, model availability, benchmarks, endorsements, or deployment status.
-- Link to safety notes and transparency reports by status.
-- Update graphs when release workflow, boundary handling, or artifact status changes.
+- Use precise release-documentation language.
+- Mark examples as synthetic and non-release examples.
+- Keep model status explicit.
+- Include intended use, out-of-scope use, data exclusions, privacy boundaries, limitations, bias/risk notes, safety notes, governance contact, GitHub companion link, and `218.network` placeholder in model-card templates.
+- Do not claim a model exists unless the public Hugging Face repository, model card, release notes, safety notes, and review status exist.
+- Do not write final Upwork profile text, active offer copy, pricing, turnaround promises, or client-facing claims.
 
 ## Validation
 
