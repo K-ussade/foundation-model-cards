@@ -23,7 +23,7 @@ It does not contain model weights, checkpoints, private training corpora, sealed
 
 | Repository | Relationship |
 | --- | --- |
-| [`K-ussade`](https://github.com/K-ussade/K-ussade) | Alexandra's public GitHub profile and status vocabulary. |
+| [`K-ussade`](https://github.com/K-ussade/K-ussade) | K-ussade public GitHub profile and status vocabulary stewarded by Alexandra Caussade. |
 | [`foundation-graph-kit`](https://github.com/K-ussade/foundation-graph-kit) | Mermaid graph classes and public-safe diagram rules. |
 | [`foundation-public-roadmap`](https://github.com/K-ussade/foundation-public-roadmap) | Public status ledger for planned and scaffolded release surfaces. |
 | [`foundation-doc-templates`](https://github.com/K-ussade/foundation-doc-templates) | General documentation templates and review gates. |
